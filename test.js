@@ -12,5 +12,5 @@
         ]
     };
     // Register the extension
-    ScratchExtensions.register('Hello World', descriptor, ext);
+    ScratchExtensions.register('Ev P4K', descriptor, ext);
 })({});
