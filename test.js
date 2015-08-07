@@ -8,18 +8,18 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.my_first_block = function() {
-        // Code that gets executed when the block is run
+    ext.power = function(base, exponent) {
+        return base*exponent;
     };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            // Block type, block name, function name
-            [' ', 'pin analog', 'pin analog'],
+            // Block type, block name, function name, param1 default value, param2 default value
+            ['r', '%n ^ %n', 'power', 2, 3],
         ]
     };
 
     // Register the extension
-    ScratchExtensions.register('P4k', descriptor, ext);
+    ScratchExtensions.register('P4K', descriptor, ext);
 })({});
